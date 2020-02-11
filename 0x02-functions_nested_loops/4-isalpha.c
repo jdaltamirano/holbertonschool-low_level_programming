@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * int _isalph - If else statement
- *@c: integer number
+ * _isalpha - If else statement
+ * @c: integer number
  * Return: 0 (Succes)
  */
 
