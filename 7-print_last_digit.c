@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * print_last_digit - If else statement
  * @n: integer number
