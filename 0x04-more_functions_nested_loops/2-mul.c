@@ -8,12 +8,13 @@
  */
 
 int mul(int a, int b)
+
 {
-	int result = a + b;
+	int result = a * b;
 
 	if (a < 0 || b < 0)
 	{
-		return (-result);
+		return (result);
 	}
 	else
 	{
