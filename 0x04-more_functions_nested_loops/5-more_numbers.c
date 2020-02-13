@@ -1,6 +1,6 @@
 #include "holberton.h"
 
- /**
+/**
  * more_numbers - If else statement
  * @n:
  * @c:
