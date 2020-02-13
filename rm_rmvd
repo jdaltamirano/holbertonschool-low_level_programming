@@ -1,0 +1,8 @@
+#!/bin/bash
+git status | grep deleted | cut -d ":" -f2 |
+while read fil
+do 
+	file=$(echo $fil | xargs)
+	echo "$file"
+	git add --all "$file"
+done
