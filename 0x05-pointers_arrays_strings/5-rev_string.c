@@ -4,6 +4,7 @@
  * rev_string - If else statement
  * @s: char
  * Return: 0 (Sucess)
+ *
  */
 void rev_string(char *s)
 {
