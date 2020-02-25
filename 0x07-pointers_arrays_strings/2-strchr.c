@@ -1,4 +1,4 @@
-  
+#include "holberton.h"
 /**
 * _strchr - If else statement
 * @s: char
