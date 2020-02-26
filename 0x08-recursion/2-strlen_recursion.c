@@ -2,17 +2,17 @@
 
 /**
  * _strlen_recursion - If else statement
- * @n:
  * @s: char
  * Return: 0 (Sucess)
  */
 
 int _strlen_recursion(char *s)
 {
-	int n;
-
-	for (n = 0; s[n] != '\0'; n++)
-	;
-
-	return (n);
+	if (*s != '\0')
+	{
+		return 1 + _strlen_recursion(s + 1);
+	} else 
+	{
+		return 0;
+	}
 }
