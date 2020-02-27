@@ -1,35 +1,27 @@
 #include "holberton.h"
 /**
- * _sqrt_recursion - If else statement
- * @n: Int
- * Return: 0 (Sucess)
+ * _sqrt - if else statement
+ * @x: int
+ * @y: int
+ * Return: 0
+ */
+int _sqrt(int x, int y)
+{
+	int r = y * y;
+
+	if (r > x)
+		return (-1);
+	else if (r == x)
+		return (y);
+	else
+		return (_sqrt(x, y + 1));
+}
+/**
+ * _sqrt_recursion - if else statement
+ * @n: int
+ * Return: 0
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 0)
-	{
-		return (0);
-	}
-	return (sqrt_rec(1, n));
-}
-/**
- * sqrt_rec - If else statement
- * @x: Int
- * @y: int
- * Return: 0 (Sucess)
- */
-int sqrt_rec(int x, int y)
-{
-	if (x * x == y)
-	{
-		return (x);
-	}
-	else if (x * x > y)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (sqrt_rec(x + 1, y));
-	}
+	return (_sqrt(n, 1));
 }
